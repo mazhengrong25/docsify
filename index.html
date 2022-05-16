@@ -1,0 +1,73 @@
+<!--
+ * @Description: 
+ * @Author: mzr
+ * @Date: 2022-05-06 15:03:52
+ * @LastEditTime: 2022-05-12 17:25:36
+ * @LastEditors: mzr
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>learn docsify</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- begin -->
+    <!-- 引入主题 -->
+    <!-- <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"
+    />
+    <!-- 引入地址栏前小图标 -->
+    <link rel="icon" href="icon.ico" />
+    <link rel="stylesheet" href="/css//docsify_charty.css" />
+    <style>
+      /* body {
+        overflow-y: auto !important;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 加载对话框 -->
+    <div id="app">Please wait...</div>
+  </body>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
+  <!-- 复制到剪贴板 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <!-- 插件 绘画图表 -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@2.0.2/dist/docsify-charty.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script>
+    window.$docsify = {
+      name: "文档名称", // 未实现
+      repo: "https://github.com/mazhengrong25",
+
+      // begin 增添配置项
+      // coverpage: true, // 激活封面
+      themeColor: "gray", // 主题颜色 (侧边栏和内容整体字体颜色)
+      onlyCover: true, // 封面和主页分隔
+      routerMode: "history",
+      loadSidebar: true, // 加载侧边栏
+      // subMaxLevel: 2, // 目录层级
+
+      notFoundPage: "my404.md", // 加载404页面
+
+      // 全局设置图表
+      charty: {
+        theme: "#EE5599",
+        mode: "dark",
+        debug: true,
+      },
+    };
+  </script>
+</html>
